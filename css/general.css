@@ -1,0 +1,110 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000311}}
+body {
+  color: #3b444b;
+  background-image: url(../img/fondo.png);
+  background-attachment: fixed;
+  background-position: center center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000317}}
+.header-cont {
+  width: 100%;
+  position: fixed;
+  top: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000321}}
+  .header-cont #logo {
+    background: url("../img/logo.png") no-repeat;
+    height: 46px;
+    float: left;
+    width: 298px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000327}}
+  .header-cont #lstItems {
+    width: 350px;
+    padding-right: 30px;
+    vertical-align: middle;
+    float: right;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 120%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000335}}
+    .header-cont #lstItems a {
+      font-weight: 400; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000340}}
+a {
+  color: #3b444b;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000343}}
+  a:hover {
+    color: #c84b49; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000349}}
+body {
+  margin: 0px;
+  font-size: 80%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000354}}
+.header {
+  height: 46px;
+  margin: 0px auto;
+  background: #F0F0F0;
+  border: 1px solid #CCC;
+  width: 960px;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000360}}
+.content {
+  height: auto;
+  display: table;
+  margin: 51px auto;
+  margin-bottom: 5px;
+  text-align: center;
+  background: #F0F0F0;
+  border: 1px solid #CCC;
+  width: 960px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000368}}
+  .content .itemContent {
+    width: 148px;
+    margin: 5px;
+    float: left;
+    border: solid 1px yellowgreen;
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000375}}
+    .content .itemContent div {
+      width: 100%;
+      display: table-row;
+      vertical-align: middle;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000381}}
+    .content .itemContent .title {
+      background: yellowgreen;
+      height: 35px;
+      text-transform: uppercase;
+      display: table-cell; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000388}}
+    .content .itemContent .img {
+      display: table-row-group; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000392}}
+    .content .itemContent .price {
+      height: 25px;
+      background: #fff;
+      display: table-cell; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000397}}
+    .content .itemContent .buy {
+      background: yellowgreen;
+      display: table-footer-group;
+      vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\00003104}}
+.contentPaginator {
+  height: auto;
+  display: table;
+  margin: 5px auto;
+  text-align: center;
+  background: #F0F0F0;
+  border: 1px solid #CCC;
+  width: 960px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\00003111}}
+  .contentPaginator .pagination {
+    position: relative;
+    left: 50%;
+    margin-left: -100px; }

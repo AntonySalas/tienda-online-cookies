@@ -1,0 +1,117 @@
+$header_height: 46px;
+$header_width: 100%;
+$width_general: 960px;
+$colorGeneral: #3b444b;
+$colorResaltado: #c84b49;
+@mixin ancho_y_bordes(){
+    background:#F0F0F0;
+    border:1px solid #CCC;
+    width:$width_general;
+}
+body{
+    color: $colorGeneral;
+background-image: url(../img/fondo.png);
+ background-attachment: fixed;
+ background-position: center center;
+}
+.header-cont{
+    width:100%;
+    position:fixed;
+    top:0px;
+    #logo{
+        background: url("../img/logo.png") no-repeat;
+        height: $header_height;
+        float: left;
+        width: 298px;
+    }
+    #lstItems{
+        width: 350px;
+        padding-right: 30px;
+        vertical-align: middle;
+        float: right; 
+        padding-top: 10px;
+        text-align: right;
+        font-size: 120%;
+        a{
+            font-weight: 400;
+        }
+    }
+}
+a{
+    color: $colorGeneral;
+    text-decoration: none;
+    &:hover{
+        color: $colorResaltado;
+    }
+}
+
+
+body{
+    margin:0px;
+    font-size: 80%;
+}
+
+.header {
+    height:$header_height;
+    margin:0px auto;
+    @include ancho_y_bordes();
+    width: $header_width;
+}
+.content {
+    height: auto;
+    display: table; 
+    margin: $header_height + 5px auto;
+    margin-bottom: 5px;
+    text-align: center;
+    @include ancho_y_bordes();
+    //padding: 30px;
+    .itemContent{
+        width: 148px;
+        //height: 351px;;
+        margin: 5px;
+        float: left;
+        border: solid 1px yellowgreen;
+        display: table; 
+        div{
+            width: 100%;
+            display: table-row;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .title{
+            background: yellowgreen;
+            height: 35px;
+            //font-size: 80%;
+            text-transform: uppercase;
+            display: table-cell;
+        }
+        .img{
+            //height: 150px;
+            display: table-row-group;
+        }
+        .price{
+            height: 25px;
+            background: #fff;
+            display: table-cell;
+        }
+        .buy{
+            background: yellowgreen;
+            display: table-footer-group;
+            vertical-align: middle;
+        }
+    }
+}
+.contentPaginator{
+    height: auto;
+    display: table; 
+    margin: 5px auto;
+    
+    text-align: center;
+    @include ancho_y_bordes();
+        .pagination{
+  position:relative;
+  left: 50%;
+  margin-left: -100px;
+    }
+}
+
