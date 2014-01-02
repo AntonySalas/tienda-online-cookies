@@ -1,22 +1,22 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000311}}
 body {
   color: #3b444b;
   background-image: url(../img/fondo.png);
   background-attachment: fixed;
   background-position: center center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000317}}
 .header-cont {
   width: 100%;
   position: fixed;
   top: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000321}}
   .header-cont #logo {
     background: url("../img/logo.png") no-repeat;
     height: 46px;
     float: left;
     width: 298px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000327}}
   .header-cont #lstItems {
     width: 350px;
     padding-right: 30px;
@@ -25,24 +25,24 @@ body {
     padding-top: 10px;
     text-align: right;
     font-size: 120%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000335}}
     .header-cont #lstItems a {
       font-weight: 400; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000340}}
 a {
   color: #3b444b;
   text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000343}}
   a:hover {
     color: #c84b49; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000349}}
 body {
   margin: 0px;
   font-size: 80%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000354}}
 .header {
   height: 46px;
   margin: 0px auto;
@@ -51,7 +51,7 @@ body {
   width: 960px;
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000360}}
 .content {
   height: auto;
   display: table;
@@ -61,40 +61,40 @@ body {
   background: #F0F0F0;
   border: 1px solid #CCC;
   width: 960px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000368}}
   .content .itemContent {
     width: 148px;
     margin: 5px;
     float: left;
     border: solid 1px yellowgreen;
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000375}}
     .content .itemContent div {
       width: 100%;
       display: table-row;
       vertical-align: middle;
       text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000381}}
     .content .itemContent .title {
       background: yellowgreen;
       height: 35px;
       text-transform: uppercase;
       display: table-cell; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000388}}
     .content .itemContent .img {
       display: table-row-group; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000392}}
     .content .itemContent .price {
       height: 25px;
       background: #fff;
       display: table-cell; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\0000397}}
     .content .itemContent .buy {
       background: yellowgreen;
       display: table-footer-group;
       vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003104}}
 .contentPaginator {
   height: auto;
   display: table;
@@ -103,8 +103,108 @@ body {
   background: #F0F0F0;
   border: 1px solid #CCC;
   width: 960px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/NetBeansProjects\/tienda\/scss\/general\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003111}}
   .contentPaginator .pagination {
     position: relative;
     left: 50%;
     margin-left: -100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003121}}
+.login {
+  background: #F1F2F4;
+  border-bottom: 2px solid #C5C5C8;
+  border-radius: 5px;
+  text-align: center;
+  color: #36383C;
+  text-shadow: 0 1px 0 #FFF;
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 15px 40px 20px 40px;
+  box-shadow: 0 0 3px #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003134}}
+h1 {
+  font-size: 1.6em;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003139}}
+p {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  color: #7B808A;
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003146}}
+.input {
+  text-align: right;
+  background: #E5E7E9;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 0 3px #65686E;
+  border-bottom: 1px solid #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003154}}
+input, select {
+  width: 260px;
+  background: transparent;
+  border: 0;
+  line-height: 3.6em;
+  box-sizing: border-box;
+  color: #71747A;
+  font-family: 'Helvetica Neue';
+  text-shadow: 0 1px 0 #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003164}}
+input:focus {
+  outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003167}}
+.blockinput {
+  border-bottom: 1px solid #BDBFC2;
+  border-top: 1px solid #FFFFFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003171}}
+.blockinput:first-child {
+  border-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003174}}
+.blockinput:last-child {
+  border-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003177}}
+.blockinput i {
+  padding-right: 10px;
+  color: #B1B3B7;
+  text-shadow: 0 1px 0 #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003182}}
+::-webkit-input-placeholder {
+  color: #71747A;
+  font-family: 'Helvetica Neue';
+  text-shadow: 0 1px 0 #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003187}}
+button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  line-height: 2em;
+  background: #72d4ca;
+  border-radius: 5px;
+  border: 0;
+  border-top: 1px solid #B2ECE6;
+  box-shadow: 0 0 0 1px #46A294, 0 2px 2px #808389;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  text-shadow: 0 1px 2px #21756A; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003201}}
+button:hover {
+  background: linear-gradient(to bottom, #6bc6ba 0%, #39af9a 100%); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/GitHub\/tienda-online-cookies\/scss\/general\.scss}line{font-family:\00003204}}
+button:active {
+  box-shadow: inset 0 0 5px #000;
+  background: linear-gradient(to bottom, #39af9a 0%, #6bc6ba 100%); }

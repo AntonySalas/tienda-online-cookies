@@ -39,8 +39,7 @@ and open the template in the editor.
         </div>
         <div class="content" id="showPages">
             <?php
-            include_once 'class/class.MySQL.php';
-            $objTienda = new MySQL("importado", "root", "1234");
+            include_once 'config.php';
             $itemsPage = 12;
             $cantData = $objTienda->Select("peliculas");
             $cantPaginas = round(count($cantData) / $itemsPage, 0, PHP_ROUND_HALF_UP);

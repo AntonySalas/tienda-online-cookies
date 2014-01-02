@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/NetBeansProjects/tienda/index.php</file>
-            <file>file:/D:/Documents/NetBeansProjects/tienda/scss/general.scss</file>
-            <file>file:/D:/Documents/NetBeansProjects/tienda/js/scripts.js</file>
-            <file>file:/D:/Documents/NetBeansProjects/tienda/ajax/returnPeliculas.php</file>
-            <file>file:/D:/Documents/NetBeansProjects/tienda/class/class.MySQL.php</file>
-            <file>file:/D:/Documents/NetBeansProjects/tienda/carro.php</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/scss/general.scss</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/index.php</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/login.php</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/js/scripts.js</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/config.php</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/carro.php</file>
+            <file>file:/D:/Documents/GitHub/tienda-online-cookies/ajax/returnPeliculas.php</file>
         </group>
     </open-files>
 </project-private>

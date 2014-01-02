@@ -1,65 +1,54 @@
 <?php
-include_once '../class/class.MySQL.php';
-$objTienda = new MySQL("importado", "root", "1234");
-$itemsPage = 12;
 
-$option = "numReg";
-if (isset($_POST["opt"])) {
-    $option = $_POST["opt"];
+@$page = $_POST['page'];  // Almacena el numero de pagina actual
+@$limit = $_POST['rows']; // Almacena el numero de filas que se van a mostrar por pagina
+@$sidx = $_POST['sidx'];  // Almacena el indice por el cual se hará la ordenación de los datos
+@$sord = $_POST['sord'];  // Almacena el modo de ordenación
+
+if (!$sidx)
+    $sidx = 1;
+
+// Se crea la conexión a la base de datos
+include_once '../config.php';
+//$conexion = new mysqli("servidor", "root", "1234", "test");
+
+// Se hace una consulta para saber cuantos registros se van a mostrar
+$result = $objTienda->Select('peliculas');
+//$result = $conexion->query("SELECT COUNT(*) AS count FROM tblcliente");
+
+// Se obtiene el resultado de la consulta
+//$fila = $result->fetch_array();
+$count = count($result);
+echo $count;
+
+//En base al numero de registros se obtiene el numero de paginas
+if ($count > 0) {
+    $total_pages = ceil($count / $limit);
+} else {
+    $total_pages = 0;
 }
-switch ($option) {
-    case "pag":
-        
-        if (isset($_GET["pag"])) {
-            $desde = ($_GET["pag"] - 1) * $itemsPage;
-            $hasta = $desde + $itemsPage;
-        } else {
-            $desde = 1;
-            $hasta = $itemsPage;
-        }
-        echo 'Desde:' . $desde . '<br />';
-        echo 'Hasta:' . $hasta . '<br />';
-        $lstPeliculas = $objTienda->Select("peliculas", '', '', "{$desde},{$itemsPage}");
-        foreach ($lstPeliculas as $dataPelicula) {
-            $txtGenero = $objTienda->Select("generos", array("CodGenero" => $dataPelicula["CodGenero"]));
-            $targetIMG = "imgPeliculas/" . $dataPelicula["CodPelicula"];
-            if (file_exists($targetIMG . ".png")) {
-                $urlImg = $targetIMG . ".png";
-            } elseif (file_exists($targetIMG . ".jpg")) {
-                $urlImg = $targetIMG . ".jpg";
-            } elseif (file_exists($targetIMG . ".gif")) {
-                $urlImg = $targetIMG . ".gif";
-            } else {
-                $urlImg = "imgPeliculas/default.png";
-            }
-            ?>
-            <div class="itemContent">
-                <div class="title"><?php echo $dataPelicula["Titulo"]; ?></div>
-                <div class="img"><img src="<?php echo $urlImg; ?>" width="148" height="207" /></div>
-                <div class="price"><i class="fa fa-dollar fa-fw"></i><?php echo number_format($dataPelicula["Precio"], 2, '.', ''); ?></div>
-                <div class="buy">
-                    <input id="txtCantidad" type="text" value="0" size="2" maxlength="3" />
-                    <input type="button" value="Añadir" />
-                </div>
-            </div>
+if ($page > $total_pages)
+    $page = $total_pages;
 
-            <?php
-        }
-        ?>
-<div class="pagination">
-    <a href="#" class="first" data-action="first">&laquo;</a>
-    <a href="#" class="previous" data-action="previous">&lsaquo;</a>
-    <input type="text" readonly="readonly" data-max-page="150" data-current_page="12" />
-    <a href="#" class="next" data-action="next">&rsaquo;</a>
-    <a href="#" class="last" data-action="last">&raquo;</a>
-</div>
-<?php
-        break;
+//Almacena numero de registro donde se va a empezar a recuperar los registros para la pagina
+$start = $limit * $page - $limit;
 
-    default:
-        $cantData = $objTienda->Select("peliculas");
-        $cantPaginas = round(count($cantData)/$itemsPage, 0, PHP_ROUND_HALF_UP);
-        echo $cantPaginas;
-        break;
+//Consulta que devuelve los registros de una sola pagina
+$consulta = "SELECT idcliente, nombre, direccion, telefono, email FROM tblCliente ORDER BY $sidx $sord LIMIT $start , $limit;";
+
+$result = $conexion->query($consulta);
+
+// Se agregan los datos de la respuesta del servidor
+$respuesta->page = $page;
+$respuesta->total = $total_pages;
+$respuesta->records = $count;
+$i = 0;
+while ($fila = $result->fetch_assoc()) {
+    $respuesta->rows[$i]['id'] = $fila["idCliente"];
+    $respuesta->rows[$i]['cell'] = array($fila["idCliente"], $fila["nombre"], $fila["direccion"], $fila["telefono"], $fila["email"]);
+    $i++;
 }
 
+// La respuesta se regresa como json
+echo json_encode($respuesta);
+?>

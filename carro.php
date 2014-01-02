@@ -34,8 +34,7 @@
         <div class="content" id="showPages">
             <table border="0" width="700">
             <?php
-            include_once 'class/class.MySQL.php';
-            $objTienda = new MySQL("importado", "root", "1234");
+include_once 'config.php';
             $itemsPage = 12;
             if(isset($_COOKIE["carCompra"])){
                 ?>
